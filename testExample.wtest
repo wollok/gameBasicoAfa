@@ -1,0 +1,28 @@
+import afa.*
+
+describe "group of tests for afa" {
+
+  test "la ganancia del partido homenaje a messi" {
+    assert.equals(490 - 15, partido.ganancia())
+  }
+
+  test "la ganancia del partido homenaje a messi con menos viaticos" {
+    messi.viaticos(1)
+    assert.equals(490 - 11, partido.ganancia())
+  }
+
+  test "la ganancia del partido homenaje a messi jubilado" {
+    messi.variacionPopularidad(-8)
+    assert.equals(450 - 15, partido.ganancia())
+  }
+
+
+
+  test "la ganancia del partido homenaje a ronaldo en el monumental con obras avanzadas" {
+    partido.jugador(ronaldo)
+    monumental.trabajar()
+    partido.estadio(monumental)
+    assert.equals(311.334, partido.ganancia())
+  }
+
+}

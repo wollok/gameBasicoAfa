@@ -1,0 +1,16 @@
+import wollok.game.*
+
+import afa.*
+
+program afaPlus {
+	afa.iniciar()
+	game.start()
+	
+	/*
+	console.println("Partido homenaje a messi, se recauda:")
+	console.println(partido.ganancia())
+	partido.estadio(monumental)
+	console.println("Partido homenaje a messi, en el monumental se recauda:")
+	console.println(partido.ganancia())
+   */
+}
